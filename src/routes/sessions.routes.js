@@ -7,4 +7,4 @@ const sessionsController = new SessionsController();
 const sessionsRoutes = Router();
 sessionsRoutes.post("/", sessionsController.create);
 
-module.exports = routes;
+module.exports = sessionsRoutes;
