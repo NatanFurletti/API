@@ -13,6 +13,8 @@ function ensureAuthenticated(request, response, next) {
   try {
     const { sub: user_id } = verify(token, authConfig.jwt.secret);
 
+    console.log({ user_id });
+
     request.user = {
       id: Number(user_id),
     };
